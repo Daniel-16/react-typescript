@@ -1,0 +1,37 @@
+.card {
+    width: 70%;
+    height: 5px;
+    border: 1px solid rgb(75, 74, 74);
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 3px 3px 0;
+    background-color: lightgrey;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 10px
+}
+.todos {
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* padding: 20px */
+}
+.delete__button {
+    background: linear-gradient(to right, rgb(67, 67, 185), purple);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    padding: -10px;
+    cursor: pointer;
+    margin-right: 5px
+}
+.tick__button {
+    background: linear-gradient(to top, rgb(67, 67, 185), purple);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    cursor: pointer
+}

@@ -1,0 +1,30 @@
+.input {
+    height: 40px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    font-size: 15px;
+    transition: 0.4s;
+    box-shadow: 1px 2px 2px 1px grey
+}
+.input:focus {
+    box-shadow: 0 0 10px 1000px rgb(66, 66, 66);
+    outline: none
+}
+.submit__button {
+    position: relative;
+    right: 45px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: none;
+    background: linear-gradient(to right, rgb(81, 81, 238), rgb(223, 43, 223));
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+.submit__button:hover {
+    background: linear-gradient(to bottom, rgb(81, 81, 238), rgb(223, 43, 223));
+}
