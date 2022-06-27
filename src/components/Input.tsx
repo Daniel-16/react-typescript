@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { Todo } from "../model";
-import "./styles.css";
 
 interface Props {
   todo: string;
@@ -23,19 +22,21 @@ const Input = ({ todo, setTodo, todos, setTodos }: Props) => {
   };
   //   console.log(todos);
   return (
-    <div>
-      <form style={{ textAlign: "center", padding: "10" }} onSubmit={handleAdd}>
-        <input
-          ref={inputRef}
-          type="text"
-          value={todo}
-          onChange={handleInput}
-          placeholder="Enter a task"
-          className="input"
-        />
-        <button type="submit" className="submit__button">
-          Go
-        </button>
+    <div className="container">
+      <form onSubmit={handleAdd}>
+        <div className="input-group">
+          <input
+            ref={inputRef}
+            type="text"
+            value={todo}
+            onChange={handleInput}
+            placeholder="Enter a task"
+            className="form-control w-70"
+          />
+          <button type="submit" className="btn btn-primary">
+            Go
+          </button>
+        </div>
       </form>
     </div>
   );
