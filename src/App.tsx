@@ -7,7 +7,7 @@ const App: React.FC = () => {
   const [todo, setTodo] = useState<string>("");
   const [todos, setTodos] = useState<Todo[]>([]);
   return (
-    <div className="App">
+    <div className="App mt-3">
       <h1 style={{ textAlign: "center" }}>Task App</h1>
       <Input todo={todo} setTodo={setTodo} todos={todos} setTodos={setTodos} />
       <TodoLists todos={todos} setTodos={setTodos} />
