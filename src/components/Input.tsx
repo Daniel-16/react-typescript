@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Results from "./Results";
+import "./styles.css";
 
 const Input = () => {
   const [number, setNumber] = useState<string | number>("");
@@ -17,9 +18,11 @@ const Input = () => {
           onChange={handleChange}
           min="0"
           max="9"
+          style={{ borderColor: "pink" }}
         />
       </form>
       <p>{number}</p>
+      <button className="btn btn-outline">Click here</button>
     </div>
   );
 };
