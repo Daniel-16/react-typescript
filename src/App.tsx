@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Input from "./components/Input";
-import TodoLists from "./components/TodoLists";
-import { Todo } from "./model";
 
 const App: React.FC = () => {
-  const [todo, setTodo] = useState<string>("");
-  const [todos, setTodos] = useState<Todo[]>([]);
   return (
-    <div className="App mt-3">
+    <div className="mt-3 container">
       <h1 style={{ textAlign: "center" }}>Task App</h1>
-      <h4 style={{ textAlign: "center" }}>Hello there</h4>
-      <Input todo={todo} setTodo={setTodo} todos={todos} setTodos={setTodos} />
-      <TodoLists todos={todos} setTodos={setTodos} />
+      <h4 style={{ textAlign: "center" }}>Hello world</h4>
+      <div className="row">
+        <div className="col-lg-5">
+          <Input />
+        </div>
+      </div>
     </div>
   );
 };

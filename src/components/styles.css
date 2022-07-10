@@ -1,0 +1,14 @@
+.form-control:focus {
+    border-color: pink;
+    box-shadow: 0 0 0 0.2rem pink
+}
+.btn-outline {
+    border-color: pink;
+}
+.btn-outline:focus {
+    box-shadow: 0 0 0 0.2rem rgb(252, 202, 211)
+}
+.btn-outline:hover {
+    background-color: pink;
+    color: black
+}
